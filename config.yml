@@ -1,0 +1,84 @@
+---
+# Vagrant base box
+# available boxes - https://atlas.hashicorp.com/8thom
+vagrant_box: 8thom/acquia-php_5.6
+
+# Vagrant hostname and IP configuration.
+vagrant_hostname: d8.local
+vagrant_ip: 192.168.8.8
+
+# Run provision on vagrant up
+vagrantup_provision: "true"
+
+# Import database
+# available types: file, sql-sync
+#db_import_type: file
+#db_import_source:
+
+# A list of synced folders, with the keys 'local_path', 'destination', and 'id'.
+# You can use NFS by switching the 'type' to 'nfs'.
+vagrant_synced_folders:
+  - local_path: docroot
+    destination: /drupal
+    id: drupal
+    type: nfs
+
+# Memory and CPU to use for this VM.
+vagrant_memory: 1024
+vagrant_cpus: 2
+
+# Drush site install
+drush_site_install: yes
+drupal_site_name: "Drupal 8 Vagrant"
+drupal_user: "vagrant"
+drupal_password: "vagrant"
+
+# Other variables in this file will be used during Ansible provisioning.
+drush_version: "8.0.0-beta11"
+drush_keep_updated: yes
+
+firewall_allowed_tcp_ports:
+  - "22"
+  - "25"
+  - "80"
+  - "81"
+  - "443"
+  - "8025"
+  - "8983"
+
+varnish_listen_port: 80
+varnish_storage: "malloc,256m"
+
+apache_listen_port: 8080
+apache_vhosts:
+  - servername: "d8.local"
+    documentroot: "/drupal"
+  - servername: "xhprof.d8.local"
+    documentroot: "/usr/share/php/xhprof_html"
+
+# The php version can not be changed.
+# Another vagrant_box must be selected above.
+php_version: "5.6"
+php_memory_limit: "256M"
+php_display_errors: "On"
+php_realpath_cache_size: "1024K"
+php_sendmail_path: "/usr/sbin/ssmtp -t"
+
+# APC will be enabled for PHP < 5.5, OpCache for PHP 5.5+.
+php_apc_enabled_in_ini: true
+php_apc_shm_size: "128M"
+php_opcache_enabled_in_ini: true
+php_opcache_memory_consumption: "128"
+php_opcache_max_accelerated_files: 4096
+
+# Disable main XDebug components unless needed.
+php_xdebug_coverage_enable: 0
+php_xdebug_default_enable: 0
+
+mysql_root_password: root
+mysql_databases:
+  - name: drupal8
+    encoding: utf8
+    collation: utf8_general_ci
+
+solr_version: '3.6.2'
