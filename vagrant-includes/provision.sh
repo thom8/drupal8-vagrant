@@ -5,12 +5,9 @@
 
 vagrantup_provision="$1"
 
-if [ "$vagrantup_provision" == "false" ] ; then
+if [ ! -f vagrantup ] ; then
 
-  if [ ! -f vagrantup ] ; then
-
-    # Create vagrantup file.
-    touch vagrantup
+  if [ "$vagrantup_provision" == "false" ] ; then
 
     # Skip provisioning
     skip_provision="true"
@@ -19,12 +16,15 @@ if [ "$vagrantup_provision" == "false" ] ; then
 
   fi
 
+  # Remove drush
+  sudo rm -rf /usr/local/share/drush/
+
+  # Create vagrantup file.
+  touch vagrantup
+
 fi
 
 if [ ! "$skip_provision" ] ; then
-
-  # Remove drush
-  sudo rm -rf /usr/local/share/drush/
 
   # cd to Ansible staging directory
   cd /etc/ansible/staging
