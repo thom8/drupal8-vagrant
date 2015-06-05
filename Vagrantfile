@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
 
       # Run install
       config.vm.provision "site_install", type: "shell" do |s|
-        s.inline = "/bin/bash /home/vagrant/site_install.sh $1 $2 $3 $4"
+        s.inline = "/bin/bash /home/vagrant/site_install.sh $1 \"$2\" $3 $4"
         s.args = [
           vconfig['mysql_databases'][0]['name'],
           vconfig['drupal_site_name'],

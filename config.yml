@@ -29,7 +29,7 @@ vagrant_cpus: 2
 
 # Drush site install
 drush_site_install: yes
-drupal_site_name: "Drupal 8 Vagrant"
+drupal_site_name: "Drupal 8 Vagrant Box"
 drupal_user: "vagrant"
 drupal_password: "vagrant"
 
