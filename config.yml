@@ -1,14 +1,14 @@
 ---
 # Vagrant base box
 # available boxes - https://atlas.hashicorp.com/8thom
-vagrant_box: 8thom/acquia-php_5.6
+vagrant_box: 8thom/acquia-drupal8
 
 # Vagrant hostname and IP configuration.
 vagrant_hostname: d8.local
 vagrant_ip: 192.168.8.8
 
 # Run provision on vagrant up
-vagrantup_provision: "true"
+vagrantup_provision: "false"
 
 # Import database
 # available types: file, sql-sync
