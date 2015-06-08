@@ -9,12 +9,13 @@
   cd drupal8-vagrant
   git submodule init
   git submodule update
+  git submodule foreach git pull origin 8.0.x
   vagrant up
   ```
 
   3. If you have [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) installed - skip this step..
 
-  Update you hosts file - add the following line:
+  Update your [hosts file](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/) - add the following line:
 
   ```
   192.168.8.8      d8.local
