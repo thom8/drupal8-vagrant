@@ -1,8 +1,8 @@
 # Drupal 8 Vagrant Box
 
-  1. Open terminal.
+  1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) & [Vagrant](https://www.vagrantup.com/downloads.html)
 
-  2. run the following commands --
+  2. Open terminal and run the following commands --
 
   ```
   git clone https://github.com/thom8/drupal8-vagrant.git
@@ -23,6 +23,7 @@
   4. Goto http://d8.local/
 
   username :: vagrant
+
   password :: vagrant
 
   5. Happy days.
