@@ -31,4 +31,4 @@
 
 ## More info
 
-Please refer to the parent project [Acquia Vagrant](https://github.com/thom8/acquia-vagrant)
+This is an implementation of [Acquia Vagrant](https://github.com/thom8/acquia-vagrant) so please refer to this project for more info.
