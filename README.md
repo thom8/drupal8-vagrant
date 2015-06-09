@@ -28,3 +28,7 @@
   password :: vagrant
 
   5. Happy days.
+
+## More info
+
+Please refer to the parent project [Acquia Vagrant](https://github.com/thom8/acquia-vagrant)
