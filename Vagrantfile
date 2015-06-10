@@ -33,3 +33,31 @@ Vagrant.configure(2) do |config|
     end
 
 end
+
+# Create drush alias.
+if vconfig['create_drush_alias']
+
+  require 'erb'
+  class DrushAlias
+    attr_accessor :hostname, :uri, :ip, :root
+    def template_binding
+      binding
+    end
+  end
+
+  alias_file = "#{Dir.home}/.drush/"+vconfig['vagrant_hostname']+".aliases.drushrc.php"
+  if ARGV[0] == "destroy"
+    File.delete(alias_file) if File.exist?(alias_file)
+  else
+     alias_file = File.open(alias_file, "w+")
+     template = File.read("./vagrant-includes/drush_alias.erb")
+     da = DrushAlias.new
+     da.hostname = vconfig['vagrant_hostname']
+     da.uri = vconfig['apache_vhosts'][0]['servername']
+     da.ip = vconfig['vagrant_ip']
+     da.root = vconfig['vagrant_synced_folders'][0]['destination']
+     alias_file << ERB.new(template).result(da.template_binding)
+     alias_file.close
+  end
+
+end

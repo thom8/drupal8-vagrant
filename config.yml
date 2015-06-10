@@ -33,6 +33,9 @@ drupal_site_name: "Drupal 8 Vagrant Box"
 drupal_user: "vagrant"
 drupal_password: "vagrant"
 
+# Drush alias
+create_drush_alias: yes
+
 # Other variables in this file will be used during Ansible provisioning.
 drush_version: "8.0.0-beta11"
 drush_keep_updated: yes
