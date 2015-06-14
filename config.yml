@@ -8,7 +8,7 @@ vagrant_hostname: d8.local
 vagrant_ip: 192.168.8.8
 
 # Run provision on vagrant up
-vagrantup_provision: "false"
+vagrantup_provision: no
 
 # Import database
 # available types: file, sql-sync
