@@ -21,13 +21,14 @@
   192.168.8.8      d8.local
   ```
 
-  4. Goto http://d8.local/
+  4. Go to http://d8.local/
 
-  username :: vagrant
+  ```
+  username: vagrant
+  password: vagrant
+  ```
 
-  password :: vagrant
-
-  5. Happy days.
+  5. Enjoy.
 
 ## More info
 
