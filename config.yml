@@ -22,6 +22,10 @@ vagrant_synced_folders:
     destination: /drupal
     id: drupal
     type: nfs
+  - local_path: patches
+    destination: /patches
+    id: patches
+    type: nfs
 
 # Memory and CPU to use for this VM.
 vagrant_memory: 1024

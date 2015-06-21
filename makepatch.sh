@@ -16,7 +16,7 @@ patchName="$(echo "$project_name-$short_description-$issue_number-$comment_numbe
 cd docroot
 rm -rf $patchName
 git fetch
-git diff 8.0.x > $patchName
-mv $patchName "../$patchName"
+git diff origin/8.0.x > $patchName
+mv $patchName "../patches/$patchName"
 
 echo "Patch file created: $patchName"
