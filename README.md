@@ -2,7 +2,7 @@
 
   1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) & [Vagrant](https://www.vagrantup.com/downloads.html)
 
-  2. Open terminal and run the following commands --
+  2. Open terminal (or [git bash](https://msysgit.github.io/) for windows users) and run the following commands --
 
   ```
   git clone --recursive https://github.com/thom8/drupal8-vagrant.git
