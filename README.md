@@ -29,6 +29,10 @@
 
   5. Enjoy.
 
+## Demo
+
+[![Demo video](https://lh3.googleusercontent.com/Bugy6wSJ8Z7cqFbG1sLTQFT4HIcFrgG5xy3lvYVBYC02=w854-h510-no)](https://www.youtube.com/watch?v=JNG_y0rCZFc)
+
 ## More info
 
 This is an implementation of [Acquia Vagrant](https://github.com/thom8/acquia-vagrant) so please refer to this project for more info.
