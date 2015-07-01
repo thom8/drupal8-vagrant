@@ -8,26 +8,17 @@
   git clone --recursive https://github.com/thom8/drupal8-vagrant.git
   cd drupal8-vagrant
   git submodule foreach git checkout 8.0.x
-  vagrant plugin install vagrant-hostupdater
   vagrant up
   ```
 
-  3. If [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) was successfully installed - skip this step..
-
-  Update your [hosts file](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/) - add the following line:
-
-  ```
-  192.168.8.8      d8.local
-  ```
-
-  4. Go to http://d8.local/
+  3. Go to http://d8.ddns.net/
 
   ```
   username: vagrant
   password: vagrant
   ```
 
-  5. Enjoy.
+  4. Enjoy.
 
 ## Demo
 
