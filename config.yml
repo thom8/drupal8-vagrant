@@ -7,6 +7,9 @@ vagrant_box: 8thom/acquia-drupal8
 vagrant_hostname: d8.local
 vagrant_ip: 192.168.8.8
 
+# Update ansible roles before provisioning
+update_ansiable_roles: no
+
 # Run provision on vagrant up
 vagrantup_provision: no
 
