@@ -1,4 +1,4 @@
-# Drupal 8 Vagrant Box
+# Drupal 8 Sprint Box
 
   1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) & [Vagrant](https://www.vagrantup.com/downloads.html)
 
