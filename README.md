@@ -5,9 +5,8 @@
   2. Open terminal (or [git bash](https://msysgit.github.io/) for windows users) and run the following commands --
 
   ```
-  git clone --recursive https://github.com/thom8/drupal8-vagrant.git
+  git clone https://github.com/thom8/drupal8-vagrant.git
   cd drupal8-vagrant
-  git submodule foreach git checkout 8.0.x
   vagrant up
   ```
 
@@ -19,10 +18,6 @@
   ```
 
   4. Enjoy.
-
-## Demo
-
-[![Demo video](https://lh3.googleusercontent.com/Bugy6wSJ8Z7cqFbG1sLTQFT4HIcFrgG5xy3lvYVBYC02=w854-h510-no)](https://www.youtube.com/watch?v=JNG_y0rCZFc)
 
 ## More info
 
