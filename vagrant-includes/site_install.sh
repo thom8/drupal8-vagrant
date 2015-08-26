@@ -50,6 +50,9 @@ EOF
   --account-pass="$drupalPass" \
   --site-name="$siteName" >/dev/null
 
+  # Set permissions
+  sudo chgrp -R www-data /drupal/docroot
+
   echo "Install complete."
 
   echo "Open http://d8.ddns.net/ or use the one-time login link below."
