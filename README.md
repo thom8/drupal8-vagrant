@@ -23,6 +23,8 @@
 * All configuration is stored in`config.yml`
 * Default Drupal credentials: `admin/password`
 * Default MySQL credentials: `root/password`
+* Get into the box: `vagrant ssh`
+* Project location: `/var/www/drupal8/docroot`
 
 ## More info
 
