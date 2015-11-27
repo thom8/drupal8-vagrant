@@ -7,10 +7,10 @@ vagrant_box: 8thom/acquia-drupal8
 vagrant_hostname: d8.local
 vagrant_ip: 192.168.8.8
 
-# Update ansible roles before provisioning
+# Update ansible roles before provisioning.
 update_ansible_roles: no
 
-# Run provision on vagrant up
+# Run provision on vagrant up.
 vagrantup_provision: no
 
 # A list of synced folders, with the keys 'local_path', 'destination', and 'id'.
@@ -25,7 +25,7 @@ vagrant_synced_folders:
 vagrant_memory: 1024
 vagrant_cpus: 2
 
-# Drush site install
+# Drush site install.
 drush_site_install: yes
 drupal_site_name: "Drupal 8 Vagrant"
 drupal_user: "admin"
@@ -43,13 +43,13 @@ firewall_allowed_tcp_ports:
   - "25"
   - "80"
 
-# Apache config
+# Apache config.
 apache_listen_port: 80
 apache_vhosts:
   - servername: "d8.local"
     documentroot: "/var/www/drupal8/docroot"
 
-# PHP config
+# PHP config.
 php_version: "5.5"
 php_memory_limit: "256M"
 php_display_errors: "On"
@@ -59,7 +59,7 @@ php_opcache_enabled_in_ini: true
 php_opcache_memory_consumption: "128"
 php_opcache_max_accelerated_files: 4096
 
-# MySQL Config
+# MySQL config.
 mysql_root_password: password
 mysql_databases:
   - name: drupal8
