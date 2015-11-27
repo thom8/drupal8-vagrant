@@ -17,7 +17,7 @@ vagrantup_provision: no
 # You can use NFS by switching the 'type' to 'nfs'.
 vagrant_synced_folders:
   - local_path: .
-    destination: /drupal
+    destination: /var/www/drupal8
     id: drupal
     type: nfs
 
@@ -47,7 +47,7 @@ firewall_allowed_tcp_ports:
 apache_listen_port: 80
 apache_vhosts:
   - servername: "d8.local"
-    documentroot: "/drupal/docroot"
+    documentroot: "/var/www/drupal8/docroot"
 
 # PHP config
 php_version: "5.5"
