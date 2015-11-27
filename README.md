@@ -19,12 +19,20 @@
 
   4. Enjoy.
 
-## Configuration
-* All configuration is stored in`config.yml`
+## Configuration & tools
+* Vagrant box configuration: `config.yml`
+* Project location (inside of VM): `/var/www/drupal8/docroot`
 * Default Drupal credentials: `admin/password`
 * Default MySQL credentials: `root/password`
 * Get into the box: `vagrant ssh`
-* Project location: `/var/www/drupal8/docroot`
+
+## Reset the box
+* Reset Drupal installation and vagrant box: `reset-full.sh`
+* Reset Drupal installation: `reset.sh`
+
+## Create patches
+* Create patches using `makepatch.sh`. You will be prompted for all information related to the patch.
+* Created patches will be stored in `patches` directory.
 
 ## More info
 
