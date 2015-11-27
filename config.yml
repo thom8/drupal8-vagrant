@@ -35,7 +35,7 @@ drupal_password: "password"
 create_drush_alias: yes
 
 # Other variables in this file will be used during Ansible provisioning.
-drush_version: "8.0.0-beta14"
+drush_version: "8.0.0"
 drush_keep_updated: yes
 
 firewall_allowed_tcp_ports:
