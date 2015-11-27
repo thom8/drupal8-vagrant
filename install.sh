@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Installation file that can be used in CURL.
+#
 
 git clone https://github.com/thom8/drupal8-vagrant.git
 cd drupal8-vagrant
