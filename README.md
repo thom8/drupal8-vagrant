@@ -19,6 +19,10 @@
 
   4. Enjoy.
 
+## Configuration
+* Get into the box: `vagrant ssh`
+* Project location: `/var/www/drupal8/docroot`
+
 ## More info
 
 This is an implementation of [Acquia Vagrant](https://github.com/thom8/acquia-vagrant) so please refer to this project for more info.
