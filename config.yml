@@ -7,17 +7,17 @@ vagrant_box: 8thom/acquia-drupal8
 vagrant_hostname: d8.local
 vagrant_ip: 192.168.8.8
 
-# Update ansible roles before provisioning
+# Update ansible roles before provisioning.
 update_ansible_roles: no
 
-# Run provision on vagrant up
+# Run provision on vagrant up.
 vagrantup_provision: no
 
 # A list of synced folders, with the keys 'local_path', 'destination', and 'id'.
 # You can use NFS by switching the 'type' to 'nfs'.
 vagrant_synced_folders:
   - local_path: .
-    destination: /drupal
+    destination: /var/www/drupal8
     id: drupal
     type: nfs
 
@@ -25,17 +25,17 @@ vagrant_synced_folders:
 vagrant_memory: 1024
 vagrant_cpus: 2
 
-# Drush site install
+# Drush site install.
 drush_site_install: yes
 drupal_site_name: "Drupal 8 Vagrant"
-drupal_user: "vagrant"
-drupal_password: "vagrant"
+drupal_user: "admin"
+drupal_password: "password"
 
 # Drush alias
 create_drush_alias: yes
 
 # Other variables in this file will be used during Ansible provisioning.
-drush_version: "8.0.0-beta14"
+drush_version: "8.0.0"
 drush_keep_updated: yes
 
 firewall_allowed_tcp_ports:
@@ -43,13 +43,13 @@ firewall_allowed_tcp_ports:
   - "25"
   - "80"
 
-# Apache config
+# Apache config.
 apache_listen_port: 80
 apache_vhosts:
   - servername: "d8.local"
-    documentroot: "/drupal/docroot"
+    documentroot: "/var/www/drupal8/docroot"
 
-# PHP config
+# PHP config.
 php_version: "5.5"
 php_memory_limit: "256M"
 php_display_errors: "On"
@@ -59,8 +59,8 @@ php_opcache_enabled_in_ini: true
 php_opcache_memory_consumption: "128"
 php_opcache_max_accelerated_files: 4096
 
-# MySQL Config
-mysql_root_password: root
+# MySQL config.
+mysql_root_password: password
 mysql_databases:
   - name: drupal8
     encoding: utf8

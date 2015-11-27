@@ -1,6 +1,8 @@
 #!/bin/bash
-
-# https://www.drupal.org/node/707484
+#
+# Create a patch with a name in a format expected by drupal.org.
+#
+# @see https://www.drupal.org/node/707484
 
 echo "Enter project name: "
 read project_name
