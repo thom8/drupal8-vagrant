@@ -19,6 +19,11 @@
 
   4. Enjoy.
 
+## Configuration
+* All configuration is stored in`config.yml`
+* Default Drupal credentials: `admin/password`
+* Default MySQL credentials: `root/password`
+
 ## More info
 
 This is an implementation of [Acquia Vagrant](https://github.com/thom8/acquia-vagrant) so please refer to this project for more info.
