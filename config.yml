@@ -28,8 +28,8 @@ vagrant_cpus: 2
 # Drush site install
 drush_site_install: yes
 drupal_site_name: "Drupal 8 Vagrant"
-drupal_user: "vagrant"
-drupal_password: "vagrant"
+drupal_user: "drupal"
+drupal_password: "password"
 
 # Drush alias
 create_drush_alias: yes
@@ -60,7 +60,7 @@ php_opcache_memory_consumption: "128"
 php_opcache_max_accelerated_files: 4096
 
 # MySQL Config
-mysql_root_password: root
+mysql_root_password: password
 mysql_databases:
   - name: drupal8
     encoding: utf8
