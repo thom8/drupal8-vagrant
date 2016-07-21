@@ -1,4 +1,4 @@
 #!/bin/bash
 
-vagrant ssh -c "sudo rm -rf /home/vagrant/vagrantup /home/vagrant/siteinstalled"
+vagrant ssh -c "cd /var/beetbox/docroot && drush sql-drop -y"
 vagrant provision
