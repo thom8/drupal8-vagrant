@@ -13,16 +13,15 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
   1. Open terminal (or [git bash](https://msysgit.github.io/) for windows users) and run the following commands --
 
   ```
-  git clone https://github.com/thom8/drupal8-vagrant.git
-  cd drupal8-vagrant
+  git clone https://github.com/thom8/drupal8-vagrant.git && cd $_
   vagrant up
   ```
 
   2. Go to http://d8.ddns.net/
 
   ```
-  username: vagrant
-  password: vagrant
+  username: admin
+  password: admin
   ```
 
   3. Enjoy.
