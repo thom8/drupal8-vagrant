@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "06dc05fcd9f114ce123e1eb18f403984",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "beet/box",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beetboxvm/beetbox.git",
+                "reference": "95788756e1de4792e5a77bffcb4d278a43c3f9a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/95788756e1de4792e5a77bffcb4d278a43c3f9a1",
+                "reference": "95788756e1de4792e5a77bffcb4d278a43c3f9a1",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "phpunit/phpunit": "^4.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Beet\\Box\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Beet\\Box\\": "composer/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pre-provisioned L*MP stack VM",
+            "homepage": "https://github.com/beetboxvm/beetbox",
+            "time": "2017-01-21 03:00:20"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "beet/box": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

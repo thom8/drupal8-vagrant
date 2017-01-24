@@ -4,6 +4,7 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
 
 ## Requirements
 
+* [Composer](https://getcomposer.org/download/)
 * [Vagrant](https://www.vagrantup.com/) >= 1.8
 * [Virtualbox](https://www.virtualbox.org/)
 * [Vagrant Hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
@@ -14,10 +15,11 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
 
   ```
   git clone https://github.com/thom8/drupal8-vagrant.git drupal8-vagrant && cd $_
+  composer install
   vagrant up
   ```
 
-  2. Go to http://d8.ddns.net/
+  2. Go to http://d8.local/
 
   ```
   username: admin
