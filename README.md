@@ -1,4 +1,4 @@
-# Drupal 8 Sprint Box
+# Drupal 8 Sprint Box [![CircleCI](https://circleci.com/gh/thom8/drupal8-vagrant.svg?style=svg)](https://circleci.com/gh/thom8/drupal8-vagrant)
 
 Simple Vagrant config to download and install the latest dev version of Drupal 8.
 
