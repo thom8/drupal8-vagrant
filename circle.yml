@@ -1,6 +1,7 @@
 ---
 dependencies:
   override:
+    - composer clearcache
     - composer install
 test:
   override:

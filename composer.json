@@ -3,6 +3,9 @@
     "description": "",
     "type": "project",
     "license": "MIT",
+    "config": {
+        "process-timeout": 0
+    },
     "minimum-stability": "dev",
     "require-dev": {
         "beet/box": "dev-master"
@@ -19,7 +22,6 @@
             "@provision"
         ]
     },
-    "process-timout": 0,
     "extra": {
         "beetbox": {
             "config": {
