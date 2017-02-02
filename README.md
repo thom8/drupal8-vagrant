@@ -14,7 +14,7 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
   1. Open terminal (or [git bash](https://msysgit.github.io/) for windows users) and run the following commands --
 
   ```
-  composer create-project thom8/drupal8-vagrant drupal8-vagrant && cd $_
+  composer create-project thom8/drupal8-vagrant some-dir && cd $_
   vagrant up
   ```
 
@@ -26,6 +26,20 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
   ```
 
   3. Enjoy.
+
+## Variants
+
+### Drupal 8 PHP 7.
+
+```
+composer create-project -n thom8/drupal8-vagrant:dev-php7 some-dir && cd $_ && vagrant up
+```
+
+### Backdrop.
+
+```
+composer create-project -n thom8/drupal8-vagrant:dev-backdrop some-dir && cd $_ && vagrant up
+```
 
 ## More info
 

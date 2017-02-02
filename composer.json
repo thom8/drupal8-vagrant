@@ -1,6 +1,6 @@
 {
     "name": "thom8/drupal8-vagrant",
-    "description": "",
+    "description": "Simple Drupal 8 Development Environment",
     "type": "project",
     "license": "MIT",
     "config": {
