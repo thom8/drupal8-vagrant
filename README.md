@@ -35,6 +35,12 @@ Simple Vagrant config to download and install the latest dev version of Drupal 8
 composer create-project -n thom8/drupal8-vagrant:dev-php7 some-dir && cd $_ && vagrant up
 ```
 
+### Drupal 7.
+
+```
+composer create-project -n thom8/drupal8-vagrant:dev-d7 some-dir && cd $_ && vagrant up
+```
+
 ### Backdrop.
 
 ```
