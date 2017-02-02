@@ -24,13 +24,13 @@
     },
     "extra": {
         "beetbox": {
-            "vagrant_ip": "192.168.88.88",
-            "beet_domain": "d8.local",
+            "vagrant_ip": "192.168.88.87",
+            "beet_domain": "d7.local",
             "beet_root": "{{ beet_base }}/docroot",
-            "beet_site_name": "Drupal 8 Sprint Box",
+            "beet_site_name": "Drupal 7 Sprint Box",
             "drupal_create_makefile": true,
+            "drupal_make_core_branch": "7.x",
             "drupal_make_working_copy": true,
-            "drupal_make_core_branch": "8.5.x",
             "drupal_build_makefile": true,
             "drupal_install_site": true,
             "drupal_account_name": "admin",
