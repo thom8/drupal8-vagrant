@@ -8,7 +8,7 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "beet/box": "dev-master"
+        "beet/box": "^0.4"
     },
     "scripts": {
         "up": "vagrant up",
