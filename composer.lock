@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ddce56a30093ab69f2ec9495ecbe804",
+    "content-hash": "110165952d21b3da71be0338e29480b5",
     "packages": [],
     "packages-dev": [
         {
             "name": "beet/box",
-            "version": "0.4.3",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beetboxvm/beetbox.git",
-                "reference": "9160c73cc7ed877bb4f6a57576aa72ed5a80fed9"
+                "reference": "154da72ca6e6f1bfb74d6bece5b56d41ebdad6b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/9160c73cc7ed877bb4f6a57576aa72ed5a80fed9",
-                "reference": "9160c73cc7ed877bb4f6a57576aa72ed5a80fed9",
+                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/154da72ca6e6f1bfb74d6bece5b56d41ebdad6b9",
+                "reference": "154da72ca6e6f1bfb74d6bece5b56d41ebdad6b9",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,9 @@
             "require-dev": {
                 "composer/composer": "dev-master",
                 "consolidation/robo": "~1",
-                "phpunit/phpunit": "^6.0"
+                "joestewart/robo-vagrant": "^1.0",
+                "phpunit/phpunit": "^6.0",
+                "sensiolabs/security-checker": "^4.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -47,7 +49,7 @@
             ],
             "description": "A pre-provisioned L*MP stack VM",
             "homepage": "https://github.com/beetboxvm/beetbox",
-            "time": "2017-02-28T07:27:05+00:00"
+            "time": "2017-04-20T15:35:12+00:00"
         }
     ],
     "aliases": [],
