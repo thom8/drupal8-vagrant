@@ -1,8 +1,21 @@
 ---
+machine:
+  php:
+    version: 7.1.0
+  environment:
+    VAGRANT_URL: https://releases.hashicorp.com/vagrant/1.9.3/vagrant_1.9.3_x86_64.deb
+    VAGRANT_DEB: "$HOME/downloads/vagrant.deb"
 dependencies:
+  cache_directories:
+    - ~/downloads
   override:
+    - mkdir -p "$HOME/downloads"
+    - if [[ ! -f "$VAGRANT_DEB" ]] ; then wget $VAGRANT_URL -O $VAGRANT_DEB ; fi
+    - sudo dpkg -i $VAGRANT_DEB
     - composer clearcache
     - composer install
 test:
   override:
     - composer validate
+    - vagrant version
+    - cat .beetbox/config.yml
