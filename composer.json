@@ -35,7 +35,8 @@
             "drupal_install_site": true,
             "drupal_account_name": "admin",
             "drupal_account_pass": "admin",
-            "php_memory_limit": "284M"
+            "php_memory_limit": "284M",
+            "drush_version": "master"
         }
     }
 }
