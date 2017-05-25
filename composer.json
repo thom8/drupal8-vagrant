@@ -8,7 +8,7 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "beet/box": "^0.5"
+        "beet/box": "^0.6"
     },
     "scripts": {
         "up": "vagrant up",
@@ -36,7 +36,7 @@
             "drupal_account_name": "admin",
             "drupal_account_pass": "admin",
             "php_memory_limit": "284M",
-            "drush_version": "master"
+            "drush_version": "9.0.0-alpha1"
         }
     }
 }
