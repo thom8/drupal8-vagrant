@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "beet/box",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beetboxvm/beetbox.git",
-                "reference": "59a2c5333ca710475b25be52468c4f51c37a07da"
+                "reference": "299b26dc141ca3a7de30cab88fa61050664e10f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/59a2c5333ca710475b25be52468c4f51c37a07da",
-                "reference": "59a2c5333ca710475b25be52468c4f51c37a07da",
+                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/299b26dc141ca3a7de30cab88fa61050664e10f5",
+                "reference": "299b26dc141ca3a7de30cab88fa61050664e10f5",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "description": "A pre-provisioned L*MP stack VM",
             "homepage": "https://github.com/beetboxvm/beetbox",
-            "time": "2017-05-22T00:29:12+00:00"
+            "time": "2017-05-25T04:36:16+00:00"
         }
     ],
     "aliases": [],
