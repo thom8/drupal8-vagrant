@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fa919cc50494bb8ecb928756281c699",
+    "content-hash": "534abeaf67e6354c747fc90e25e2077b",
     "packages": [],
     "packages-dev": [
         {
             "name": "beet/box",
-            "version": "0.6.3",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beetboxvm/beetbox.git",
-                "reference": "fa15a99332df4f856e8b5b1916b1f7c99b30487a"
+                "reference": "02980c48496446f9f410315d03b9c51eec0c5a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/fa15a99332df4f856e8b5b1916b1f7c99b30487a",
-                "reference": "fa15a99332df4f856e8b5b1916b1f7c99b30487a",
+                "url": "https://api.github.com/repos/beetboxvm/beetbox/zipball/02980c48496446f9f410315d03b9c51eec0c5a6a",
+                "reference": "02980c48496446f9f410315d03b9c51eec0c5a6a",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "description": "A pre-provisioned L*MP stack VM",
             "homepage": "https://github.com/beetboxvm/beetbox",
-            "time": "2017-06-21T00:09:29+00:00"
+            "time": "2017-07-19T14:08:33+00:00"
         }
     ],
     "aliases": [],
