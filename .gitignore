@@ -1,5 +1,6 @@
 .beetbox/
 .vagrant/
 docroot/
+composer.lock
 vendor/
 Vagrantfile
