@@ -10,31 +10,17 @@
     "require-dev": {
         "beet/box": "^0.8"
     },
-    "scripts": {
-        "up": "vagrant up",
-        "provision": "vagrant provision",
-        "reset": [
-            "vagrant ssh -c 'drush --root=/var/beetbox/docroot sql-drop -y'",
-            "@provision"
-        ],
-        "reset-full": [
-            "vagrant ssh -c '[ ! -d /var/beetbox/docroot ] && sudo chmod -R 755 /var/beetbox/docroot && rm -rf /var/beetbox/docroot'",
-            "@provision"
-        ]
-    },
     "extra": {
         "beetbox": {
-            "vagrant_ip": "192.168.88.88",
-            "beet_domain": "d8.local",
+            "vagrant_ip": "192.168.88.66",
+            "beet_domain": "backdrop.local",
             "beet_root": "{{ beet_base }}/docroot",
-            "beet_site_name": "Drupal 8 Sprint Box",
-            "drupal_create_makefile": true,
-            "drupal_make_working_copy": true,
-            "drupal_make_core_branch": "8.5.x",
-            "drupal_build_makefile": true,
-            "drupal_install_site": true,
-            "drupal_account_name": "admin",
-            "drupal_account_pass": "admin"
+            "beet_project": "backdrop",
+            "backdrop_checkout": true,
+            "backdrop_version": "1.x",
+            "backdrop_install_site": true,
+            "backdrop_account_name": "admin",
+            "backdrop_account_pass": "admin"
         }
     }
 }
